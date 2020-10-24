@@ -92,5 +92,3 @@ function databold(r) {
 	});
 	console.log("database added!!!!!!!!!!");
 }
-
-beforelog();

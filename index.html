@@ -3,12 +3,7 @@
 	<head>
 		<title>questGDrive</title>
 		<link rel="shortcut icon" href="images/logo2.png"/>
-		<link rel="stylesheet" href="css/css.css">
-		<link rel="stylesheet" href="css/fonts.css">
-		<script src="js/vue.js"></script>
-		<script src="js/log.js"></script>
-		<script src="js/poster.js"></script>
-
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
@@ -31,19 +26,28 @@
 			}
 		</style>
 
-
 		<!-- The core Firebase JS SDK is always required and must be listed first -->
 		<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
-
 		<!-- TODO: Add SDKs for Firebase products that you want to use
 		https://firebase.google.com/docs/web/setup#available-libraries -->
 		<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+		
+		<link rel="stylesheet" href="css/css.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<script src="js/vue.js"></script>
+		<script src="js/log.js"></script>
+		<script src="js/poster.js"></script>
+		<script>
+			function load() {
+				beforelog();
+				posterSlide();
+			}
+		</script>
 
-	   
 	</head>
 
 
-	<body onload="posterSlide()">
+	<body onload="load()">
 		<header style="text-align: center;">
 			<input type="image" src="images/logo1.png" class="headlogol"> <input type="image" src="images/name1.png" class="headpic"> <input type="image" src="images/logo1.png" class="headlogor" style="transform: scaleX(-1)";>
 		</header>
@@ -126,6 +130,9 @@
 		</div>
 
 		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5eea359db14a8cb7"></script>
+		<script>
+			beforelog();
+		</script>
 
 	</body>
 </html>
